@@ -1,0 +1,5 @@
+apple
+pineapple
+strawberry
+tomato
+carrot

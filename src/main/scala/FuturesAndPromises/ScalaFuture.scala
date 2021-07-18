@@ -21,10 +21,11 @@ object ScalaFuture {
 
   def main(args: Array[String]): Unit = {
     val answer = add(8, 9)
-    // waiting result with Await
+    // Await.result() to block our main program and wait for the result, (synchronous)
     Await.result(answer, 10.seconds)
     println(s"Sum: ${answer}")
 
+    // print result with callback
     answer onComplete {
       case Success(value) =>
         println("Handling Future with onComplete")
@@ -33,6 +34,7 @@ object ScalaFuture {
         println(s"An error has occurred: ${exception}")
     }
 
+    // print result with map
     add(7, 10).map { answer =>
       println("Handling Future with map")
       println(s"Sum: ${answer}")

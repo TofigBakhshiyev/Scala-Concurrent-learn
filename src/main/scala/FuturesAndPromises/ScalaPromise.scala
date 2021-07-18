@@ -7,7 +7,6 @@ import scala.concurrent.ExecutionContext
 /**
  * Simple Examples of Promise
  * Promise can be written (normally only once)
- * https://www.youtube.com/watch?v=Wq9YbTeOkjA&t=33s
  * */
 object ScalaPromise {
   implicit  val ec = ExecutionContext.global
@@ -16,7 +15,9 @@ object ScalaPromise {
     val promise = Promise[Int]()
     val future = promise.future
 
+    // write a value to promise
     promise.complete(Success(1))
+    // read the value
     println(future.map(answer => println(s"Answer: ${answer}")))
 
     // this will give an error because promise has already fulfilled
