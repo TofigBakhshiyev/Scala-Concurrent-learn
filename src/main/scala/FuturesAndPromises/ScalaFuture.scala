@@ -39,5 +39,11 @@ object ScalaFuture {
       println("Handling Future with map")
       println(s"Sum: ${answer}")
     }
+
+    // print with foreach
+    add(7, 10).foreach{ answer =>
+      println("Handling Future with foreach")
+      println(s"Sum: ${answer}")
+    }
   }
 }
