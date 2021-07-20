@@ -1,5 +1,11 @@
-.idea/
-
 target/
 
-project/
+.settings
+.project
+.classpath
+
+.bsp
+.idea
+*.iml
+
+.DS_Store
