@@ -67,4 +67,4 @@ The recover function recovers error message.
 #### More resources for concurrent and parallel programming in Scala
 - [Scala Futures for Beginners](http://allaboutscala.com/tutorials/chapter-9-beginner-tutorial-using-scala-futures/#futures-introduction)
 - [Monix](https://monix.io/)
-- [Akka Actors](https://doc.akka.io/docs/akka/current/typed/actors.html#:~:text=SayHello(%22Akka%22))%3B,running%20many%20actors%2C%20per%20JVM.)
+- [Akka Actors](https://doc.akka.io/docs/akka/current/index.html)
